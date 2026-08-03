@@ -1,8 +1,9 @@
-/* 青科竞赛雷达 · 静态版交互逻辑 */
+/* 青科竞赛雷达 · 静态版交互逻辑 v2（智能分类筛选版） */
 (function () {
   "use strict";
 
   var COMPETITIONS = window.COMPETITIONS || [];
+  var META = window.COMPETITIONS_META || {};
 
   var STATUS_META = {
     upcoming: "未开始",
@@ -10,10 +11,42 @@
     ended: "已结束",
   };
 
+  // 学科方向智能分类（内嵌，兼容旧数据；data.js 已含 field 时优先使用）
+  var FIELD_RULES = [
+    ["数学", ["数学建模", "数学竞赛", "数学应用", "统计建模", "数模", "MCM", "ICM", "力学竞赛", "物理学术"]],
+    ["物理", ["物理", "光电", "物理实验"]],
+    ["材料", ["材料", "高分子", "金相", "热处理", "焊接", "失效分析"]],
+    ["化学化工", ["化学", "化工", "橡胶", "过程装备"]],
+    ["生物环境", ["生物", "生命科学", "环境", "生态", "海洋", "低碳", "环保", "绿色", "农业"]],
+    ["机械制造", ["机械", "制造", "机电", "工业工程", "成图", "三维", "智能制造", "先进成图"]],
+    ["经济管理", ["经济", "管理", "金融", "会计", "商务", "贸易", "市场", "供应链", "物流", "财税", "资产评估", "人力资源", "品牌策划", "商业模式", "电子商务"]],
+    ["电子信息", ["电子", "电气", "自动化", "智能汽车", "机器人", "嵌入式", "物联网", "信息安全", "网络安全", "网络技术", "智能媒体", "虚拟现实"]],
+    ["计算机软件", ["程序", "软件", "算法", "计算机", "大数据", "人工智能", "区块链", "数字媒体", "开源", "天梯", "蓝桥"]],
+    ["外语", ["英语", "日语", "德语", "外语", "翻译", "演讲", "写作", "阅读", "辩论", "词汇", "跨文化"]],
+    ["创新创业", ["创新", "创业", "挑战杯", "互联网+", "学创杯", "三创", "服务外包", "商业精英", "创业综合"]],
+    ["设计艺术", ["设计", "艺术", "广告", "创意", "动漫", "摄影", "书法", "服装", "数字艺术", "纪录片", "微电影", "美术", "短视频", "好创意", "学院奖"]],
+    ["体育", ["体育", "田径", "篮球", "足球", "排球", "武术", "跆拳道", "健美操", "乒乓球", "羽毛球", "网球", "游泳", "定向", "跳绳", "运动会", "啦啦操", "锦标赛"]],
+    ["人文社科", ["新闻", "传播", "法律", "社工", "思想政治", "马克思主义", "历史", "公益", "志愿服务", "传统文化", "乡村振兴", "科普"]],
+  ];
+  function classifyField(name) {
+    var n = String(name || "");
+    for (var i = 0; i < FIELD_RULES.length; i++) {
+      var kws = FIELD_RULES[i][1];
+      for (var j = 0; j < kws.length; j++) {
+        if (n.indexOf(kws[j]) !== -1) return FIELD_RULES[i][0];
+      }
+    }
+    return "其他";
+  }
+  function getField(c) {
+    return c.field || classifyField(c.name);
+  }
+
   var state = {
     query: "",
-    category: "ALL",
-    level: "ALL",
+    categories: [], // 多选 A/B/C
+    levels: [],     // 多选 G/S
+    fields: [],     // 多选学科方向
     unit: "ALL",
     onlyUpcoming: false,
     onlyFavorites: false,
@@ -39,8 +72,8 @@
   }
 
   function parseDate(s) {
-    var p = s.split("-").map(Number);
-    return new Date(p[0], p[1] - 1, p[2]);
+    var p = String(s).split("-").map(Number);
+    return new Date(p[0], (p[1] || 1) - 1, p[2] || 1);
   }
 
   function daysBetween(a, b) {
@@ -65,11 +98,11 @@
   }
 
   function fmtDate(s) {
-    return s.split("-").join(".");
+    return String(s).split("-").join(".");
   }
 
   function esc(s) {
-    return String(s).replace(/[&<>"']/g, function (m) {
+    return String(s == null ? "" : s).replace(/[&<>"']/g, function (m) {
       return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[m];
     });
   }
@@ -96,11 +129,17 @@
       '<path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>';
   }
 
+  function tagIcon() {
+    return '<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"/><circle cx="7" cy="7" r="1.5"/></svg>';
+  }
+
   function filtered() {
     var q = state.query.trim().toLowerCase();
     var list = COMPETITIONS.filter(function (c) {
-      if (state.category !== "ALL" && c.category !== state.category) return false;
-      if (state.level !== "ALL" && c.level !== state.level) return false;
+      if (state.categories.length && state.categories.indexOf(c.category) === -1) return false;
+      if (state.levels.length && state.levels.indexOf(c.level) === -1) return false;
+      if (state.fields.length && state.fields.indexOf(getField(c)) === -1) return false;
       if (state.unit !== "ALL" && c.unit !== state.unit) return false;
       if (state.onlyUpcoming) {
         var st = getStatus(c);
@@ -108,7 +147,7 @@
       }
       if (state.onlyFavorites && !favorites.has(c.id)) return false;
       if (q) {
-        var hay = (c.name + " " + c.unit + " " + c.categoryName + " " + c.levelName).toLowerCase();
+        var hay = (c.name + " " + c.unit + " " + c.categoryName + " " + c.levelName + " " + (getField(c) || "")).toLowerCase();
         if (hay.indexOf(q) === -1) return false;
       }
       return true;
@@ -123,7 +162,8 @@
 
   function badge(c) {
     return '<span class="badge cat-' + c.category + '">' + esc(c.categoryName) + "</span>" +
-      '<span class="badge lvl-' + c.level + '">' + esc(c.levelName) + "</span>";
+      '<span class="badge lvl-' + c.level + '">' + esc(c.levelName) + "</span>" +
+      (getField(c) ? '<span class="badge field-badge">' + tagIcon() + esc(getField(c)) + "</span>" : "");
   }
 
   function statusBadge(c) {
@@ -174,13 +214,41 @@
     emptyEl.hidden = list.length !== 0;
   }
 
+  function countBy(key, value) {
+    return COMPETITIONS.filter(function (c) { return c[key] === value; }).length;
+  }
+
   function renderStats() {
-    var n = 0;
+    var total = COMPETITIONS.length;
+    var A = countBy("category", "A"), B = countBy("category", "B"), C = countBy("category", "C");
+    var G = countBy("level", "G"), S = countBy("level", "S");
+    var units = {};
+    var upcoming = 0;
     COMPETITIONS.forEach(function (c) {
+      units[c.unit] = true;
       var st = getStatus(c);
-      if (st === "upcoming" || st === "open") n++;
+      if (st === "upcoming" || st === "open") upcoming++;
     });
-    document.getElementById("stat-upcoming").innerHTML = "<strong>" + n + "</strong><span>项即将报名 / 报名中</span>";
+    var unitCount = Object.keys(units).length;
+    document.getElementById("stat-total").textContent = total;
+    document.getElementById("stat-upcoming").querySelector(".stat-num").textContent = upcoming;
+    document.getElementById("stat-units").textContent = unitCount;
+    var catEl = document.querySelector(".stats-strip .stat:nth-child(2) .stat-num");
+    var lvlEl = document.querySelector(".stats-strip .stat:nth-child(3) .stat-num");
+    if (catEl) catEl.textContent = A + " / " + B + " / " + C;
+    if (lvlEl) lvlEl.textContent = G + " / " + S;
+  }
+
+  function renderMeta() {
+    if (META.source && document.getElementById("about-base")) {
+      document.getElementById("about-base").innerHTML = "赛事目录依据" + esc(META.source) + "，共 <strong>" + COMPETITIONS.length + "</strong> 项，分为 A / B / C 三类，国家级 / 省级两级。";
+    }
+    if (META.year && document.getElementById("hero-tag-year")) {
+      document.getElementById("hero-tag-year").textContent = META.year + " 年度认定目录";
+    }
+    if (document.getElementById("hero-tag-count")) {
+      document.getElementById("hero-tag-count").textContent = COMPETITIONS.length + " 项 · A/B/C 三类";
+    }
   }
 
   function populateUnits() {
@@ -195,6 +263,72 @@
         unitEl.appendChild(opt);
       }
     });
+  }
+
+  function populateFields() {
+    var counts = {};
+    COMPETITIONS.forEach(function (c) {
+      var f = getField(c);
+      counts[f] = (counts[f] || 0) + 1;
+    });
+    var order = Object.keys(counts).sort(function (a, b) { return counts[b] - counts[a]; });
+    var el = document.getElementById("chips-field");
+    el.innerHTML = "";
+    order.forEach(function (f) {
+      var btn = document.createElement("button");
+      btn.type = "button";
+      btn.className = "chip";
+      btn.setAttribute("data-field", f);
+      btn.textContent = f + " " + counts[f];
+      el.appendChild(btn);
+    });
+  }
+
+  function toggleIn(arr, v) {
+    var i = arr.indexOf(v);
+    if (i === -1) arr.push(v); else arr.splice(i, 1);
+  }
+
+  function syncChips() {
+    document.querySelectorAll("#chips-category .chip").forEach(function (b) {
+      b.classList.toggle("is-active", state.categories.indexOf(b.getAttribute("data-cat")) !== -1);
+    });
+    document.querySelectorAll("#chips-level .chip").forEach(function (b) {
+      b.classList.toggle("is-active", state.levels.indexOf(b.getAttribute("data-level")) !== -1);
+    });
+    document.querySelectorAll("#chips-field .chip").forEach(function (b) {
+      b.classList.toggle("is-active", state.fields.indexOf(b.getAttribute("data-field")) !== -1);
+    });
+  }
+
+  function syncControls() {
+    document.getElementById("filter-query").value = state.query;
+    document.getElementById("filter-unit").value = state.unit;
+    document.getElementById("filter-sort").value = state.sort;
+    document.getElementById("toggle-upcoming").checked = state.onlyUpcoming;
+    document.getElementById("toggle-fav").checked = state.onlyFavorites;
+    syncChips();
+  }
+
+  function resetFilters() {
+    state.query = "";
+    state.categories = [];
+    state.levels = [];
+    state.fields = [];
+    state.unit = "ALL";
+    state.onlyUpcoming = false;
+    state.onlyFavorites = false;
+    state.sort = "catalog";
+    syncControls();
+    render();
+  }
+
+  function goToFavorites() {
+    state.onlyFavorites = true;
+    state.onlyUpcoming = false;
+    syncControls();
+    render();
+    document.getElementById("list").scrollIntoView({ behavior: "smooth", block: "start" });
   }
 
   function openModal(id) {
@@ -230,47 +364,9 @@
     detail = null;
   }
 
-  function resetFilters() {
-    state.query = "";
-    state.category = "ALL";
-    state.level = "ALL";
-    state.unit = "ALL";
-    state.onlyUpcoming = false;
-    state.onlyFavorites = false;
-    state.sort = "catalog";
-    syncControls();
-    render();
-  }
-
-  function syncControls() {
-    document.getElementById("filter-query").value = state.query;
-    document.getElementById("filter-category").value = state.category;
-    document.getElementById("filter-level").value = state.level;
-    document.getElementById("filter-unit").value = state.unit;
-    document.getElementById("filter-sort").value = state.sort;
-    document.getElementById("toggle-upcoming").checked = state.onlyUpcoming;
-    document.getElementById("toggle-fav").checked = state.onlyFavorites;
-  }
-
-  function goToFavorites() {
-    state.onlyFavorites = true;
-    state.onlyUpcoming = false;
-    syncControls();
-    render();
-    document.getElementById("list").scrollIntoView({ behavior: "smooth", block: "start" });
-  }
-
   function bind() {
     document.getElementById("filter-query").addEventListener("input", function (e) {
       state.query = e.target.value;
-      render();
-    });
-    document.getElementById("filter-category").addEventListener("change", function (e) {
-      state.category = e.target.value;
-      render();
-    });
-    document.getElementById("filter-level").addEventListener("change", function (e) {
-      state.level = e.target.value;
       render();
     });
     document.getElementById("filter-unit").addEventListener("change", function (e) {
@@ -281,6 +377,23 @@
       state.sort = e.target.value;
       render();
     });
+
+    // 芯片多选：类别 / 级别 / 学科方向
+    ["chips-category", "chips-level", "chips-field"].forEach(function (groupId) {
+      document.getElementById(groupId).addEventListener("click", function (e) {
+        var btn = e.target.closest(".chip");
+        if (!btn) return;
+        var cat = btn.getAttribute("data-cat");
+        var lvl = btn.getAttribute("data-level");
+        var fld = btn.getAttribute("data-field");
+        if (cat) toggleIn(state.categories, cat);
+        else if (lvl) toggleIn(state.levels, lvl);
+        else if (fld) toggleIn(state.fields, fld);
+        syncChips();
+        render();
+      });
+    });
+
     document.getElementById("toggle-upcoming").addEventListener("change", function (e) {
       state.onlyUpcoming = e.target.checked;
       render();
@@ -333,7 +446,9 @@
 
   document.addEventListener("DOMContentLoaded", function () {
     populateUnits();
+    populateFields();
     renderStats();
+    renderMeta();
     bind();
     render();
   });
