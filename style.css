@@ -159,14 +159,14 @@ button { font-family: inherit; cursor: pointer; }
   background: #fff; font-size: 14px; color: var(--ink);
 }
 .search-box input:focus { outline: 2px solid var(--gold); outline-offset: 1px; border-color: var(--gold); }
-.select { padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-size: 15px; color: var(--ink); cursor: pointer; }
+.select { height: 40px; padding: 0 12px; border: 1px solid var(--line); border-radius: 10px; background: #fff; font-size: 15px; color: var(--ink); cursor: pointer; }
 .chip-groups { display: flex; flex-wrap: wrap; gap: 12px 22px; align-items: flex-start; }
-.chip-group { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
-.chip-group-label { font-size: 14px; color: var(--muted); letter-spacing: 0.05em; flex: none; font-weight: 600; }
+.chip-group { display: flex; align-items: flex-start; gap: 8px; flex-wrap: wrap; }
+.chip-group-label { font-size: 14px; color: var(--muted); letter-spacing: 0.05em; flex: none; font-weight: 600; height: 40px; line-height: 40px; }
 .chips { display: flex; gap: 6px; flex-wrap: wrap; }
 .chip {
   border: 1px solid var(--line); background: #fff; color: var(--ink-2);
-  border-radius: 999px; padding: 6px 12px; font-size: 14px; cursor: pointer;
+  border-radius: 999px; height: 40px; padding: 0 14px; font-size: 14px; cursor: pointer; display: inline-flex; align-items: center; justify-content: center;
   transition: all 0.15s; user-select: none; line-height: 1.2;
 }
 .chip:hover { border-color: var(--gold); color: var(--ink); transform: translateY(-1px); }
