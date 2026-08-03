@@ -20,6 +20,7 @@
         <a href="#list" id="nav-all">全部赛事</a>
         <button type="button" class="nav-link" id="nav-fav">我的收藏</button>
         <a href="#about" id="nav-about">数据说明</a>
+        <a href="tools/importer/" id="nav-import">导入数据</a>
       </nav>
     </header>
 
@@ -33,6 +34,7 @@
           <p class="hero-lead" id="hero-lead">195 项认定竞赛，报名时间、开赛时间一目了然。<br class="hero-br" />不错过每一次报名，不错过每一个机会。</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#list">查看赛事</a>
+            <a class="btn btn-ghost" href="tools/importer/" id="hero-import">📥 导入 / 更新数据</a>
             <button type="button" class="btn btn-ghost" id="hero-fav">我的收藏</button>
           </div>
           <div class="hero-tags" aria-label="平台说明">
@@ -40,6 +42,7 @@
             <span id="hero-tag-count">195 项 · A/B/C 三类</span>
             <span id="hero-tag-level">国家级 / 省级</span>
             <span>数据来源可追溯</span>
+            <span id="hero-tag-live">官网实时抓取</span>
           </div>
         </div>
       </section>
@@ -167,7 +170,8 @@
           </div>
           <div class="about-card">
             <h3>时效信息</h3>
-            <p>报名、比赛时间为<b>演示用示例数据</b>，用于展示产品交互；正式系统的时效信息由采集方案每日同步各竞赛官网公告，并经人工复核后发布。</p>
+            <p>报名、比赛时间来自两个来源：<b>官网实时抓取</b>（每日自动同步各竞赛官网公告，卡片会标注「官网实时」）与<b>目录示例数据</b>（未命中官网自动解析时的兜底）。</p>
+            <p class="data-fresh" id="live-fresh"></p>
           </div>
           <div class="about-card">
             <h3>免责声明</h3>
@@ -202,6 +206,7 @@
   </div>
 
   <script src="data.js"></script>
+  <script src="live-overrides.js"></script>
   <script src="app.js"></script>
 </body>
 </html>

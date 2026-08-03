@@ -1,0 +1,45 @@
+# 青科竞赛雷达 · 官网实时时间自动抓取（每日定时 + 代码更新时触发）
+name: 官网实时时间自动抓取
+
+on:
+  schedule:
+    - cron: '30 22 * * *'   # UTC 22:30 = 北京时间次日 06:30
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: live-data
+  cancel-in-progress: false
+
+jobs:
+  crawl:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: 检出代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: 抓取官网实时时间
+        run: node scripts/fetch-live-dates.mjs
+
+      - name: 提交并推送更新（如有变化）
+        run: |
+          git config user.name "qkradar-bot"
+          git config user.email "qkradar-bot@users.noreply.github.com"
+          git add live-overrides.js
+          if ! git diff --cached --quiet; then
+            git commit -m "data: 官网实时时间自动更新"
+            git push origin main
+            echo "已推送官网实时时间更新"
+          else
+            echo "本轮抓取无变化，跳过提交"
+          fi

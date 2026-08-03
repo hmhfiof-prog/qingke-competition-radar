@@ -4,6 +4,19 @@
 
   var COMPETITIONS = window.COMPETITIONS || [];
   var META = window.COMPETITIONS_META || {};
+  var LIVE = window.LIVE_OVERRIDES || {};
+
+  // 官网实时数据覆盖：live-overrides.js 命中则替换报名/比赛时间，并打上实时标记
+  (function applyLiveOverrides() {
+    var keys = ["regStart", "regEnd", "eventStart", "eventEnd"];
+    COMPETITIONS.forEach(function (c) {
+      var o = LIVE[c.id];
+      if (!o) return;
+      keys.forEach(function (k) { if (o[k]) c[k] = o[k]; });
+      c.liveSource = o.source || "";
+      c.liveOfficial = o.official || "";
+    });
+  })();
 
   var STATUS_META = {
     upcoming: "未开始",
@@ -160,10 +173,15 @@
     return list;
   }
 
+  function liveIcon() {
+    return '<svg viewBox="0 0 24 24" width="12" height="12" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 3v6h-6"/></svg> ';
+  }
+
   function badge(c) {
     return '<span class="badge cat-' + c.category + '">' + esc(c.categoryName) + "</span>" +
       '<span class="badge lvl-' + c.level + '">' + esc(c.levelName) + "</span>" +
-      (getField(c) ? '<span class="badge field-badge">' + tagIcon() + esc(getField(c)) + "</span>" : "");
+      (getField(c) ? '<span class="badge field-badge">' + tagIcon() + esc(getField(c)) + "</span>" : "") +
+      (c.liveSource ? '<span class="badge live-badge" title="' + esc(c.liveSource) + '">' + liveIcon() + "官网实时</span>" : "");
   }
 
   function statusBadge(c) {
@@ -248,6 +266,31 @@
     }
     if (document.getElementById("hero-tag-count")) {
       document.getElementById("hero-tag-count").textContent = COMPETITIONS.length + " 项 · A/B/C 三类";
+    }
+    renderLiveMeta();
+  }
+
+  function fmtDateTime(iso) {
+    if (!iso) return "";
+    var d = new Date(iso);
+    if (isNaN(d.getTime())) return iso;
+    function p(n) { return (n < 10 ? "0" : "") + n; }
+    return d.getFullYear() + "-" + p(d.getMonth() + 1) + "-" + p(d.getDate()) + " " + p(d.getHours()) + ":" + p(d.getMinutes());
+  }
+
+  function renderLiveMeta() {
+    var liveCount = 0;
+    COMPETITIONS.forEach(function (c) { if (c.liveSource) liveCount++; });
+    var tag = document.getElementById("hero-tag-live");
+    if (tag) tag.textContent = liveCount > 0 ? liveCount + " 项官网实时" : "官网实时抓取 · 每日自动更新";
+    var el = document.getElementById("live-fresh");
+    if (!el) return;
+    var meta = LIVE._meta || {};
+    if (meta.fetchedAt) {
+      el.innerHTML = "最近自动抓取：<strong>" + esc(fmtDateTime(meta.fetchedAt)) + "</strong> · " +
+        liveCount + " 项赛事为官网实时时间（请以官网公告为准）。";
+    } else {
+      el.textContent = "每日自动抓取官网公告后，命中项将标注「官网实时」；未命中项为目录示例数据。";
     }
   }
 
@@ -346,7 +389,9 @@
       "<div><dt>目录序号</dt><dd>第 " + c.id + " 项</dd></div>";
     document.getElementById("modal-countdown").className = "modal-countdown countdown-" + st;
     document.getElementById("modal-countdown").textContent = countdownText(c);
-    document.getElementById("modal-note").innerHTML = "<b>备注：</b>" + esc(c.note);
+    document.getElementById("modal-note").innerHTML =
+      "<b>备注：</b>" + esc(c.note) +
+      (c.liveSource ? '<span class="live-note">⏱ 官网实时：抓取自 <a href="' + esc(c.liveOfficial || c.liveSource) + '" target="_blank" rel="noopener noreferrer">' + esc(c.liveSource) + "</a>，请以官网公告为准。</span>" : "");
     var fav = favorites.has(c.id);
     document.getElementById("modal-actions").innerHTML =
       (c.official
