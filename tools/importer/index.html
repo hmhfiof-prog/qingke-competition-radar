@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>竞赛目录导入工具 · 青科竞赛雷达</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>🏷️ 竞赛目录导入工具</h1>
+      <p class="sub">把任意学校 / 年份的《学科竞赛认定目录》（Excel / CSV / 粘贴表格）转成网站数据 <code>data.js</code>。<br />不同表格排版也能用：粘贴后会自动识别表头与列，可手动调整。</p>
+    </header>
+
+    <section class="card">
+      <h2>① 输入数据</h2>
+      <div class="row">
+        <label class="file-btn">
+          选择 CSV / TSV 文件
+          <input type="file" id="file" accept=".csv,.tsv,.txt" />
+        </label>
+        <span class="hint">Excel 用户：先在 Excel 里「另存为 CSV」再上传；或全选复制后粘贴到下方文本框。</span>
+      </div>
+      <textarea id="paste" rows="8" placeholder="也可以把表格内容直接粘贴到这里（从 Excel / Word 复制后粘贴即可，自动识别制表符 / 逗号分隔）…"></textarea>
+      <div class="row">
+        <button id="btn-parse" class="btn primary">解析表格</button>
+        <button id="btn-sample" class="btn">填入示例</button>
+      </div>
+    </section>
+
+    <section class="card" id="map-card" hidden>
+      <h2>② 确认列映射</h2>
+      <p class="sub">自动识别结果如下，如不对可下拉修改：</p>
+      <div class="map-grid" id="map-grid"></div>
+      <div class="row">
+        <button id="btn-map" class="btn primary">按此映射生成</button>
+      </div>
+    </section>
+
+    <section class="card" id="preview-card" hidden>
+      <h2>③ 预览与下载</h2>
+      <div class="meta-row">
+        <label>来源说明：<input id="meta-source" type="text" value="《2025 年度学科竞赛认定目录》" style="width:320px" /></label>
+        <label>年度：<input id="meta-year" type="number" value="2025" style="width:80px" /></label>
+        <label>学校 / 机构：<input id="meta-school" type="text" value="" style="width:180px" /></label>
+      </div>
+      <p class="stat-line" id="stat-line"></p>
+      <div class="preview" id="preview"></div>
+      <div class="row">
+        <button id="btn-download" class="btn primary">下载 data.js</button>
+        <button id="btn-copy" class="btn">复制到剪贴板</button>
+        <a id="dl-link" download="data.js" hidden></a>
+      </div>
+      <p class="hint">下载后：把 <code>data.js</code> 替换到网站目录（competition-tracker/）或 GitHub 仓库根目录即可上线。学科方向为自动智能分类，可在 data.js 里人工微调。</p>
+    </section>
+  </div>
+  <script src="importer.js"></script>
+</body>
+</html>
