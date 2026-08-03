@@ -221,6 +221,10 @@ button { font-family: inherit; cursor: pointer; }
   position: fixed; inset: 0; z-index: 60; background: rgba(28, 25, 23, 0.5);
   backdrop-filter: blur(3px); display: flex; align-items: center; justify-content: center; padding: 20px;
 }
+
+.modal-backdrop[hidden] {
+  display: none;
+}
 .modal {
   width: min(560px, 100%); max-height: 86vh; overflow: auto; background: var(--paper);
   border-radius: 20px; padding: 26px; box-shadow: var(--shadow-lift);
