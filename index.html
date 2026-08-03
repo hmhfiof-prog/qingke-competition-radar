@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>青科竞赛雷达 | 青岛科技大学学科竞赛实时跟踪平台</title>
-  <meta name="description" content="基于《2024 年度青岛科技大学学科竞赛认定目录》（共 195 项）的学科竞赛实时跟踪平台：即将报名、报名中、报名倒计时、分类筛选与收藏提醒。" />
+  <title>青科竞赛雷达 | 学科竞赛实时跟踪平台</title>
+  <meta name="description" content="学科竞赛实时跟踪平台：即将报名、报名中、报名倒计时、智能分类筛选与收藏提醒。数据可通过导入工具从各类认定目录文件生成。" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -14,7 +14,7 @@
       <a class="brand" href="#top" id="brand-link">
         <span class="brand-mark" aria-hidden="true">◎</span>
         <span class="brand-name">青科竞赛雷达</span>
-        <span class="brand-sub">QINGKE COMPETITION RADAR</span>
+        <span class="brand-sub">COMPETITION RADAR</span>
       </a>
       <nav class="topnav" aria-label="主导航">
         <a href="#list" id="nav-all">全部赛事</a>
@@ -27,84 +27,116 @@
       <section class="hero">
         <span class="hero-watermark" aria-hidden="true">竞赛雷达</span>
         <div class="hero-inner">
-          <p class="hero-eyebrow">青岛科技大学 · 学科竞赛实时跟踪平台</p>
+          <p class="hero-eyebrow" id="hero-eyebrow">学科竞赛实时跟踪平台</p>
           <h1 class="hero-title">青科竞赛雷达</h1>
           <div class="hero-divider" aria-hidden="true"></div>
-          <p class="hero-lead">195 项认定竞赛，报名时间、开赛时间一目了然。<br class="hero-br" />不错过每一次报名，不错过每一个机会。</p>
+          <p class="hero-lead" id="hero-lead">195 项认定竞赛，报名时间、开赛时间一目了然。<br class="hero-br" />不错过每一次报名，不错过每一个机会。</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#list">查看赛事</a>
             <button type="button" class="btn btn-ghost" id="hero-fav">我的收藏</button>
           </div>
           <div class="hero-tags" aria-label="平台说明">
-            <span>2024 年度认定目录</span>
-            <span>195 项 · A/B/C 三类</span>
-            <span>国家级 / 省级</span>
+            <span id="hero-tag-year">2024 年度认定目录</span>
+            <span id="hero-tag-count">195 项 · A/B/C 三类</span>
+            <span id="hero-tag-level">国家级 / 省级</span>
             <span>数据来源可追溯</span>
           </div>
         </div>
       </section>
 
       <section class="stats-strip" aria-label="数据总览">
-        <div class="stat"><strong>195</strong><span>项认定竞赛</span></div>
-        <div class="stat"><strong>3 / 100 / 92</strong><span>A / B / C 类</span></div>
-        <div class="stat"><strong>159 / 36</strong><span>国家级 / 省级</span></div>
-        <div class="stat"><strong>26</strong><span>个牵头单位</span></div>
-        <div class="stat stat-hot" id="stat-upcoming"><strong>—</strong><span>项即将报名 / 报名中</span></div>
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v4a5 5 0 0 1-10 0V4z"/><path d="M17 5h3l-1.5 3L17 5zM7 5H4l1.5 3L7 5z"/></svg>
+          </span>
+          <strong class="stat-num" id="stat-total">195</strong>
+          <span class="stat-label">项认定竞赛</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5 9-5z"/><path d="M3 13l9 5 9-5"/></svg>
+          </span>
+          <strong class="stat-num">3 / 100 / 92</strong>
+          <span class="stat-label">A / B / C 类</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13l2 8-5.5-3-5.5 3 2-8"/></svg>
+          </span>
+          <strong class="stat-num">159 / 36</strong>
+          <span class="stat-label">国家级 / 省级</span>
+        </div>
+        <div class="stat">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+          </span>
+          <strong class="stat-num" id="stat-units">26</strong>
+          <span class="stat-label">个牵头单位</span>
+        </div>
+        <div class="stat stat-hot" id="stat-upcoming">
+          <span class="stat-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/><path d="M13.7 21a2 2 0 0 1-3.4 0"/></svg>
+          </span>
+          <strong class="stat-num">—</strong>
+          <span class="stat-label">项即将报名 / 报名中</span>
+        </div>
       </section>
 
       <section class="list" id="list">
         <div class="list-head">
           <h2 class="section-title">赛事总览</h2>
-          <p class="section-sub">组合筛选 · 只看未开赛 · 报名倒计时 · 收藏提醒</p>
+          <p class="section-sub">智能分类 · 组合筛选 · 只看未开赛 · 报名倒计时 · 收藏提醒</p>
         </div>
 
         <div class="toolbar" role="search" aria-label="赛事筛选">
           <label class="search-box">
             <span class="sr-only">搜索竞赛名称或牵头单位</span>
-            <input type="search" id="filter-query" placeholder="搜索竞赛名称 / 牵头单位…" />
+            <input type="search" id="filter-query" placeholder="搜索竞赛名称 / 牵头单位 / 学科方向…" />
           </label>
-          <div class="toolbar-selects">
-            <label class="select-wrap">
-              <span class="sr-only">按类别筛选</span>
-              <select id="filter-category">
-                <option value="ALL">全部类别</option>
-                <option value="A">A 类（重点）</option>
-                <option value="B">B 类</option>
-                <option value="C">C 类</option>
+
+          <div class="chip-groups">
+            <div class="chip-group">
+              <span class="chip-group-label">类别</span>
+              <div class="chips" id="chips-category" role="group" aria-label="按类别多选">
+                <button type="button" class="chip" data-cat="A">A 类（重点）</button>
+                <button type="button" class="chip" data-cat="B">B 类</button>
+                <button type="button" class="chip" data-cat="C">C 类</button>
+              </div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-group-label">学科方向</span>
+              <div class="chips chips-fields" id="chips-field" role="group" aria-label="按学科方向多选"></div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-group-label">级别</span>
+              <div class="chips" id="chips-level" role="group" aria-label="按级别多选">
+                <button type="button" class="chip" data-level="G">国家级</button>
+                <button type="button" class="chip" data-level="S">省级</button>
+              </div>
+            </div>
+            <div class="chip-group">
+              <span class="chip-group-label">牵头单位</span>
+              <select id="filter-unit" class="select">
+                <option value="ALL">全部</option>
               </select>
-            </label>
-            <label class="select-wrap">
-              <span class="sr-only">按级别筛选</span>
-              <select id="filter-level">
-                <option value="ALL">全部级别</option>
-                <option value="G">国家级</option>
-                <option value="S">省级</option>
-              </select>
-            </label>
-            <label class="select-wrap">
-              <span class="sr-only">按牵头单位筛选</span>
-              <select id="filter-unit">
-                <option value="ALL">全部牵头单位</option>
-              </select>
-            </label>
-            <label class="select-wrap">
-              <span class="sr-only">排序方式</span>
-              <select id="filter-sort">
+            </div>
+            <div class="chip-group">
+              <span class="chip-group-label">排序</span>
+              <select id="filter-sort" class="select">
                 <option value="catalog">默认（目录序号）</option>
                 <option value="regEnd">报名截止最近优先</option>
                 <option value="eventStart">开赛时间最早优先</option>
               </select>
-            </label>
+            </div>
           </div>
+
           <div class="toolbar-toggles">
             <label class="toggle">
               <input type="checkbox" id="toggle-upcoming" />
-              
               <span>只看未开赛</span>
             </label>
             <label class="toggle">
               <input type="checkbox" id="toggle-fav" />
-              
               <span>只看收藏</span>
             </label>
             <button type="button" class="btn btn-small btn-ghost" id="btn-reset">重置筛选</button>
@@ -127,15 +159,15 @@
         <div class="about-grid">
           <div class="about-card">
             <h3>数据底座</h3>
-            <p>赛事目录依据《2024 年度青岛科技大学学科竞赛认定目录》（青科大学字〔2024〕17 号），共 <strong>195</strong> 项，分为 A / B / C 三类，国家级 / 省级两级。</p>
+            <p id="about-base">赛事目录依据《2024 年度青岛科技大学学科竞赛认定目录》，共 <strong>195</strong> 项，分为 A / B / C 三类，国家级 / 省级两级。</p>
+          </div>
+          <div class="about-card">
+            <h3>智能分类</h3>
+            <p>每项赛事按名称关键词自动标注「学科方向」（数学、计算机、材料、外语等），可多选组合筛选；分类结果仅供快速筛选参考。</p>
           </div>
           <div class="about-card">
             <h3>时效信息</h3>
             <p>报名、比赛时间为<b>演示用示例数据</b>，用于展示产品交互；正式系统的时效信息由采集方案每日同步各竞赛官网公告，并经人工复核后发布。</p>
-          </div>
-          <div class="about-card">
-            <h3>收藏与提醒</h3>
-            <p>点击卡片右上角星标即可收藏，收藏数据仅保存在当前浏览器本地，不会上传。正式版本将支持报名开始 / 截止的站内与邮件提醒。</p>
           </div>
           <div class="about-card">
             <h3>免责声明</h3>
@@ -147,8 +179,8 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <p class="footer-brand">青科竞赛雷达 · QINGKE COMPETITION RADAR</p>
-        <p>为青岛科技大学学生提供学科竞赛实时跟踪服务 · 数据来源可追溯 · 版权归各赛事组委会所有</p>
+        <p class="footer-brand">青科竞赛雷达 · COMPETITION RADAR</p>
+        <p>为在校学生提供学科竞赛实时跟踪服务 · 数据来源可追溯 · 版权归各赛事组委会所有</p>
         <p class="footer-note">© 2026 青科竞赛雷达 · 演示站点，赛事时间为示例数据</p>
       </div>
     </footer>
