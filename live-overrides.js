@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-06",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-04T08:23:09.337Z"
+    "fetchedAt": "2026-08-04T13:59:13.723Z"
   },
   "62": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-04",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-08-04T08:23:15.832Z"
+    "fetchedAt": "2026-08-04T13:59:18.209Z"
   },
   "90": {
     "regStart": "2026-07-03",
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-04T08:23:21.359Z"
+    "fetchedAt": "2026-08-04T13:59:20.514Z"
   },
   "92": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-04",
     "source": "www.ncda.org.cn",
     "official": "https://www.ncda.org.cn",
-    "fetchedAt": "2026-08-04T08:23:19.117Z"
+    "fetchedAt": "2026-08-04T13:59:21.643Z"
   },
   "106": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-10",
     "source": "www.mcm.edu.cn",
     "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-08-04T08:23:19.375Z"
+    "fetchedAt": "2026-08-04T13:59:23.375Z"
   },
   "171": {
     "regStart": "2026-07-03",
@@ -53,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-04T08:23:28.633Z"
+    "fetchedAt": "2026-08-04T13:59:34.705Z"
   },
   "181": {
     "regStart": null,
@@ -62,7 +62,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-04T08:23:28.822Z"
+    "fetchedAt": "2026-08-04T13:59:35.394Z"
   },
   "182": {
     "regStart": null,
@@ -71,10 +71,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-04T08:23:29.420Z"
+    "fetchedAt": "2026-08-04T13:59:36.091Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-04T08:23:36.761Z",
+    "fetchedAt": "2026-08-04T13:59:39.298Z",
     "crawled": 31,
     "live": 8,
     "keptPrevious": 0,
