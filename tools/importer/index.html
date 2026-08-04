@@ -10,36 +10,39 @@
   <div class="wrap">
     <header>
       <h1>🏷️ 竞赛目录导入工具</h1>
-      <p class="sub">把任意学校 / 年份的《学科竞赛认定目录》（Excel / CSV / 粘贴表格）转成网站数据 <code>data.js</code>。<br />不同表格排版也能用：粘贴后会自动识别表头与列，可手动调整。</p>
+      <p class="sub">把学校《学科竞赛认定目录》（Excel / CSV / 粘贴表格）转成网站数据 <code>data.js</code>，只需 3 步：</p>
+      <ol class="steps-intro">
+        <li><b>粘贴或上传</b>表格</li>
+        <li><b>检查</b>列对应（一般不用改）</li>
+        <li><b>下载</b> data.js 替换到网站</li>
+      </ol>
     </header>
 
     <section class="card">
-      <h2>① 输入数据</h2>
+      <h2>① 粘贴或上传表格</h2>
       <div class="row">
         <label class="file-btn">
           选择 CSV / TSV 文件
           <input type="file" id="file" accept=".csv,.tsv,.txt" />
         </label>
-        <span class="hint">Excel 用户：先在 Excel 里「另存为 CSV」再上传；或全选复制后粘贴到下方文本框。</span>
+        <button id="btn-sample" class="btn">用示例试试</button>
       </div>
-      <textarea id="paste" rows="8" placeholder="也可以把表格内容直接粘贴到这里（从 Excel / Word 复制后粘贴即可，自动识别制表符 / 逗号分隔）…"></textarea>
+      <p class="hint block-hint">也可以从 Excel / Word 里全选复制，直接粘贴到下面：</p>
+      <textarea id="paste" rows="8" placeholder="把表格内容粘贴到这里…（自动识别制表符 / 逗号分隔）"></textarea>
       <div class="row">
-        <button id="btn-parse" class="btn primary">解析表格</button>
-        <button id="btn-sample" class="btn">填入示例</button>
+        <button id="btn-parse" class="btn primary">生成并预览 →</button>
       </div>
     </section>
 
     <section class="card" id="map-card" hidden>
-      <h2>② 确认列映射</h2>
-      <p class="sub">自动识别结果如下，如不对可下拉修改：</p>
+      <h2>② 检查列对应<span class="auto-tag">自动识别</span></h2>
+      <p class="sub">列已经自动对应好；如果某列对不上，下拉改一下，预览会自动更新：</p>
       <div class="map-grid" id="map-grid"></div>
-      <div class="row">
-        <button id="btn-map" class="btn primary">按此映射生成</button>
-      </div>
+      <button id="btn-map" class="btn primary" style="display:none">按此映射生成</button>
     </section>
 
     <section class="card" id="preview-card" hidden>
-      <h2>③ 预览与下载</h2>
+      <h2>③ 预览并下载</h2>
       <div class="meta-row">
         <label>来源说明：<input id="meta-source" type="text" value="《2025 年度学科竞赛认定目录》" style="width:320px" /></label>
         <label>年度：<input id="meta-year" type="number" value="2025" style="width:80px" /></label>
@@ -52,9 +55,22 @@
         <button id="btn-copy" class="btn">复制到剪贴板</button>
         <a id="dl-link" download="data.js" hidden></a>
       </div>
-      <p class="hint">下载后：把 <code>data.js</code> 替换到网站目录（competition-tracker/）或 GitHub 仓库根目录即可上线。学科方向为自动智能分类，可在 data.js 里人工微调。</p>
+      <p class="hint block-hint">下载后：把 <code>data.js</code> 替换到网站根目录（或 GitHub 仓库根目录）即可上线。学科方向为自动智能分类，可在 data.js 里人工微调。</p>
     </section>
   </div>
   <script src="importer.js"></script>
+  <script>
+    // 简化体验：点「生成并预览」后自动完成列对应并出预览；改下拉也自动刷新
+    document.getElementById("btn-parse").addEventListener("click", function () {
+      setTimeout(function () {
+        var b = document.getElementById("btn-map");
+        if (b && !b.closest("section").hidden) b.click();
+      }, 30);
+    });
+    document.getElementById("map-grid").addEventListener("change", function () {
+      var b = document.getElementById("btn-map");
+      if (b) b.click();
+    });
+  </script>
 </body>
 </html>
