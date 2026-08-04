@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>青科竞赛雷达 | 学科竞赛实时跟踪平台</title>
+  <title>竞赛雷达 | 学科竞赛实时跟踪平台</title>
   <meta name="description" content="学科竞赛实时跟踪平台：即将报名、报名中、报名倒计时、智能分类筛选与收藏提醒。数据可通过导入工具从各类认定目录文件生成。" />
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="stylesheet" href="style.css" />
@@ -13,14 +13,14 @@
     <header class="topbar">
       <a class="brand" href="#top" id="brand-link">
         <span class="brand-mark" aria-hidden="true">◎</span>
-        <span class="brand-name">青科竞赛雷达</span>
+        <span class="brand-name">竞赛雷达</span>
         <span class="brand-sub">COMPETITION RADAR</span>
       </a>
       <nav class="topnav" aria-label="主导航">
         <a href="#list" id="nav-all">全部赛事</a>
         <button type="button" class="nav-link" id="nav-fav">我的收藏</button>
         <a href="#about" id="nav-about">数据说明</a>
-        <a href="tools/importer/" id="nav-import">导入数据</a>
+        <a href="tools/importer/index.html" id="nav-import">导入数据</a>
       </nav>
     </header>
 
@@ -29,12 +29,12 @@
         <span class="hero-watermark" aria-hidden="true">竞赛雷达</span>
         <div class="hero-inner">
           <p class="hero-eyebrow" id="hero-eyebrow">学科竞赛实时跟踪平台</p>
-          <h1 class="hero-title">青科竞赛雷达</h1>
+          <h1 class="hero-title">竞赛雷达</h1>
           <div class="hero-divider" aria-hidden="true"></div>
           <p class="hero-lead" id="hero-lead">195 项认定竞赛，报名时间、开赛时间一目了然。<br class="hero-br" />不错过每一次报名，不错过每一个机会。</p>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#list">查看赛事</a>
-            <a class="btn btn-ghost" href="tools/importer/" id="hero-import">📥 导入 / 更新数据</a>
+            <a class="btn btn-ghost" href="tools/importer/index.html" id="hero-import">📥 导入 / 更新数据</a>
             <button type="button" class="btn btn-ghost" id="hero-fav">我的收藏</button>
           </div>
           <div class="hero-tags" aria-label="平台说明">
@@ -162,7 +162,7 @@
         <div class="about-grid">
           <div class="about-card">
             <h3>数据底座</h3>
-            <p id="about-base">赛事目录依据《2024 年度青岛科技大学学科竞赛认定目录》，共 <strong>195</strong> 项，分为 A / B / C 三类，国家级 / 省级两级。</p>
+            <p id="about-base">赛事目录依据《2024 年度学科竞赛认定目录》，共 <strong>195</strong> 项，分为 A / B / C 三类，国家级 / 省级两级。</p>
           </div>
           <div class="about-card">
             <h3>智能分类</h3>
@@ -183,9 +183,9 @@
 
     <footer class="footer">
       <div class="footer-inner">
-        <p class="footer-brand">青科竞赛雷达 · COMPETITION RADAR</p>
+        <p class="footer-brand">竞赛雷达 · COMPETITION RADAR</p>
         <p>为在校学生提供学科竞赛实时跟踪服务 · 数据来源可追溯 · 版权归各赛事组委会所有</p>
-        <p class="footer-note">© 2026 青科竞赛雷达 · 演示站点，赛事时间为示例数据</p>
+        <p class="footer-note">© 2026 竞赛雷达 · 演示站点，赛事时间为示例数据</p>
       </div>
     </footer>
 
@@ -206,6 +206,7 @@
   </div>
 
   <script src="data.js"></script>
+  <script src="meta-fix.js"></script>
   <script src="live-overrides.js"></script>
   <script src="app.js"></script>
 </body>

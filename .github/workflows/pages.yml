@@ -1,6 +1,6 @@
-# 青科竞赛雷达 · 静态版自动发布到 GitHub Pages
-# 使用方法：仓库 Settings → Pages → Source 选择 "GitHub Actions"，提交本文件后会自动上线。
-# 若在 Pages 设置里选择 "Deploy from a branch"（main 分支 / 根目录），则无需本脚本。
+# 竞赛雷达 · 静态版自动发布到 GitHub Pages
+# 使用方法：新建公开仓库后，在仓库 Settings → Pages 中把 Source 选为 "GitHub Actions"，
+# 然后把本仓库源码推送过去，即可自动上线。
 name: Deploy static site to Pages
 
 on:
@@ -29,7 +29,7 @@ jobs:
       - name: Upload site artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: competition-tracker
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
