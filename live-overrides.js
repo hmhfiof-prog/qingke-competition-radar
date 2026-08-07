@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-06",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-05T23:29:57.303Z"
+    "fetchedAt": "2026-08-07T01:36:53.676Z"
   },
   "62": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-06",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-08-05T23:30:04.707Z"
+    "fetchedAt": "2026-08-07T01:37:00.868Z"
   },
   "90": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-05T23:30:04.580Z"
+    "fetchedAt": "2026-08-07T01:37:01.312Z"
   },
   "92": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-04",
     "source": "www.ncda.org.cn",
     "official": "https://www.ncda.org.cn",
-    "fetchedAt": "2026-08-05T23:30:08.415Z"
+    "fetchedAt": "2026-08-07T01:37:04.126Z"
   },
   "106": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-10",
     "source": "www.mcm.edu.cn",
     "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-08-05T23:30:07.563Z"
+    "fetchedAt": "2026-08-07T01:37:03.930Z"
   },
   "171": {
     "regStart": null,
@@ -53,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-05T23:30:19.686Z"
+    "fetchedAt": "2026-08-07T01:37:10.899Z"
   },
   "181": {
     "regStart": null,
@@ -62,7 +62,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-05T23:30:19.997Z"
+    "fetchedAt": "2026-08-07T01:37:11.286Z"
   },
   "182": {
     "regStart": null,
@@ -71,10 +71,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-05T23:30:21.753Z"
+    "fetchedAt": "2026-08-07T01:37:12.089Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-05T23:30:24.225Z",
+    "fetchedAt": "2026-08-07T01:37:16.201Z",
     "crawled": 31,
     "live": 8,
     "keptPrevious": 0,
