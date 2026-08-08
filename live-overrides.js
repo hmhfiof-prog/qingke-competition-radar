@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-06",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-07T23:06:21.507Z"
+    "fetchedAt": "2026-08-08T22:58:05.472Z"
   },
   "90": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-07T23:06:37.121Z"
+    "fetchedAt": "2026-08-08T22:58:19.380Z"
   },
   "92": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-04",
     "source": "www.ncda.org.cn",
     "official": "https://www.ncda.org.cn",
-    "fetchedAt": "2026-08-07T23:06:39.355Z"
+    "fetchedAt": "2026-08-08T22:58:17.971Z"
   },
   "171": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-07T23:06:49.179Z"
+    "fetchedAt": "2026-08-08T22:58:27.462Z"
   },
   "181": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-07T23:06:49.727Z"
+    "fetchedAt": "2026-08-08T22:58:28.104Z"
   },
   "182": {
     "regStart": null,
@@ -53,10 +53,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-07T23:06:50.746Z"
+    "fetchedAt": "2026-08-08T22:58:29.691Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-07T23:06:54.386Z",
+    "fetchedAt": "2026-08-08T22:58:32.423Z",
     "crawled": 31,
     "live": 6,
     "keptPrevious": 0,
