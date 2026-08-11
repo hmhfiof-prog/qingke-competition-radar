@@ -1,15 +1,6 @@
 // 青科竞赛雷达 · 官网实时时间覆盖（由 scripts/fetch-live-dates.mjs 自动生成，请勿手改）
 // 命中项为自动抓取官网公告得到的报名/比赛时间；未命中项仍使用 data.js 中的目录数据。
 window.LIVE_OVERRIDES = {
-  "35": {
-    "regStart": null,
-    "regEnd": null,
-    "eventStart": "2026-07-06",
-    "eventEnd": "2026-07-06",
-    "source": "www.fwwb.org.cn",
-    "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-10T23:06:53.136Z"
-  },
   "90": {
     "regStart": null,
     "regEnd": null,
@@ -17,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-10T23:07:00.616Z"
+    "fetchedAt": "2026-08-11T23:13:00.078Z"
   },
   "92": {
     "regStart": null,
@@ -26,7 +17,16 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-04",
     "source": "www.ncda.org.cn",
     "official": "https://www.ncda.org.cn",
-    "fetchedAt": "2026-08-10T23:07:03.060Z"
+    "fetchedAt": "2026-08-11T23:13:01.424Z"
+  },
+  "106": {
+    "regStart": null,
+    "regEnd": null,
+    "eventStart": "2026-09-10",
+    "eventEnd": "2026-09-10",
+    "source": "www.mcm.edu.cn",
+    "official": "https://www.mcm.edu.cn",
+    "fetchedAt": "2026-08-11T23:13:02.688Z"
   },
   "171": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-08-10T23:07:19.459Z"
+    "fetchedAt": "2026-08-11T23:13:10.652Z"
   },
   "181": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-10T23:07:21.099Z"
+    "fetchedAt": "2026-08-11T23:13:10.298Z"
   },
   "182": {
     "regStart": null,
@@ -53,10 +53,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-10T23:07:21.921Z"
+    "fetchedAt": "2026-08-11T23:13:11.056Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-10T23:07:29.159Z",
+    "fetchedAt": "2026-08-11T23:13:15.212Z",
     "crawled": 31,
     "live": 6,
     "keptPrevious": 0,
