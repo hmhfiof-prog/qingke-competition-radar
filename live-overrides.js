@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-11",
     "source": "www.clpp.org.cn",
     "official": "https://www.clpp.org.cn",
-    "fetchedAt": "2026-08-15T22:47:56.882Z"
+    "fetchedAt": "2026-08-16T22:47:00.220Z"
   },
   "35": {
     "regStart": "2026-07-31",
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-06",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-15T22:48:00.198Z"
+    "fetchedAt": "2026-08-16T22:47:01.563Z"
   },
   "58": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-25",
     "source": "www.nuedc-training.com.cn",
     "official": "https://www.nuedc-training.com.cn",
-    "fetchedAt": "2026-08-15T22:48:00.608Z"
+    "fetchedAt": "2026-08-16T22:47:03.797Z"
   },
   "92": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-04",
     "source": "www.ncda.org.cn",
     "official": "https://www.ncda.org.cn",
-    "fetchedAt": "2026-08-15T22:48:08.982Z"
+    "fetchedAt": "2026-08-16T22:47:11.620Z"
   },
   "181": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-15T22:48:19.069Z"
+    "fetchedAt": "2026-08-16T22:47:28.101Z"
   },
   "182": {
     "regStart": null,
@@ -53,10 +53,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-15T22:48:19.915Z"
+    "fetchedAt": "2026-08-16T22:47:28.941Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-15T22:48:26.663Z",
+    "fetchedAt": "2026-08-16T22:47:35.847Z",
     "crawled": 31,
     "live": 6,
     "keptPrevious": 0,
