@@ -4,11 +4,11 @@ window.LIVE_OVERRIDES = {
   "3": {
     "regStart": null,
     "regEnd": null,
-    "eventStart": "2026-08-09",
+    "eventStart": "2026-08-11",
     "eventEnd": "2026-08-11",
     "source": "www.clpp.org.cn",
     "official": "https://www.clpp.org.cn",
-    "fetchedAt": "2026-08-19T22:51:34.989Z"
+    "fetchedAt": "2026-08-20T22:55:29.338Z"
   },
   "35": {
     "regStart": "2026-07-31",
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": null,
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-19T22:51:35.738Z"
+    "fetchedAt": "2026-08-20T22:55:30.935Z"
   },
   "58": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-25",
     "source": "www.nuedc-training.com.cn",
     "official": "https://www.nuedc-training.com.cn",
-    "fetchedAt": "2026-08-19T22:51:38.391Z"
+    "fetchedAt": "2026-08-20T22:55:32.500Z"
   },
   "62": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-17",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-08-19T22:51:42.992Z"
+    "fetchedAt": "2026-08-20T22:55:35.373Z"
   },
   "92": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-07-04",
     "source": "www.ncda.org.cn",
     "official": "https://www.ncda.org.cn",
-    "fetchedAt": "2026-08-19T22:51:48.505Z"
+    "fetchedAt": "2026-08-20T22:55:38.731Z"
   },
   "106": {
     "regStart": null,
@@ -53,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-10",
     "source": "www.mcm.edu.cn",
     "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-08-19T22:51:47.540Z"
+    "fetchedAt": "2026-08-20T22:55:38.684Z"
   },
   "181": {
     "regStart": null,
@@ -62,21 +62,12 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-19T22:51:55.156Z"
-  },
-  "182": {
-    "regStart": null,
-    "regEnd": null,
-    "eventStart": "2026-05-23",
-    "eventEnd": "2026-05-23",
-    "source": "www.tiaozhanbei.net",
-    "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-19T22:51:55.748Z"
+    "fetchedAt": "2026-08-20T22:55:46.183Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-19T22:51:59.119Z",
+    "fetchedAt": "2026-08-20T22:55:52.621Z",
     "crawled": 31,
-    "live": 8,
+    "live": 7,
     "keptPrevious": 0,
     "note": "由 GitHub Actions 定时抓取各竞赛官网自动生成；标注「官网实时」的赛事时间为自动抓取结果，请以官网公告为准。"
   }
