@@ -2,13 +2,13 @@
 // 命中项为自动抓取官网公告得到的报名/比赛时间；未命中项仍使用 data.js 中的目录数据。
 window.LIVE_OVERRIDES = {
   "35": {
-    "regStart": null,
-    "regEnd": null,
-    "eventStart": "2026-08-12",
-    "eventEnd": "2026-08-19",
+    "regStart": "2026-08-24",
+    "regEnd": "2026-08-25",
+    "eventStart": null,
+    "eventEnd": null,
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-24T22:54:10.702Z"
+    "fetchedAt": "2026-08-25T22:55:52.522Z"
   },
   "58": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-24",
     "source": "www.nuedc-training.com.cn",
     "official": "https://www.nuedc-training.com.cn",
-    "fetchedAt": "2026-08-24T22:54:13.496Z"
+    "fetchedAt": "2026-08-25T22:55:55.864Z"
   },
   "62": {
     "regStart": null,
@@ -26,16 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-17",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-08-24T22:54:16.275Z"
-  },
-  "106": {
-    "regStart": null,
-    "regEnd": null,
-    "eventStart": "2026-09-10",
-    "eventEnd": "2026-09-10",
-    "source": "www.mcm.edu.cn",
-    "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-08-24T22:54:18.978Z"
+    "fetchedAt": "2026-08-25T22:55:59.817Z"
   },
   "181": {
     "regStart": null,
@@ -44,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-24T22:54:35.960Z"
+    "fetchedAt": "2026-08-25T22:56:14.929Z"
   },
   "182": {
     "regStart": null,
@@ -53,12 +44,12 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-24T22:54:36.715Z"
+    "fetchedAt": "2026-08-25T22:56:15.779Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-24T22:54:49.089Z",
+    "fetchedAt": "2026-08-25T22:56:21.214Z",
     "crawled": 31,
-    "live": 6,
+    "live": 5,
     "keptPrevious": 0,
     "note": "由 GitHub Actions 定时抓取各竞赛官网自动生成；标注「官网实时」的赛事时间为自动抓取结果，请以官网公告为准。"
   }
