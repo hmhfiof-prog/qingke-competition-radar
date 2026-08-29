@@ -4,11 +4,11 @@ window.LIVE_OVERRIDES = {
   "3": {
     "regStart": null,
     "regEnd": null,
-    "eventStart": "2026-08-20",
+    "eventStart": "2026-08-24",
     "eventEnd": "2026-08-24",
     "source": "www.clpp.org.cn",
     "official": "https://www.clpp.org.cn",
-    "fetchedAt": "2026-08-28T06:13:54.628Z"
+    "fetchedAt": "2026-08-29T03:48:20.115Z"
   },
   "35": {
     "regStart": "2026-08-24",
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-01-11",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-28T06:13:56.402Z"
+    "fetchedAt": "2026-08-29T03:48:19.472Z"
   },
   "58": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-24",
     "source": "www.nuedc-training.com.cn",
     "official": "https://www.nuedc-training.com.cn",
-    "fetchedAt": "2026-08-28T06:13:57.881Z"
+    "fetchedAt": "2026-08-29T03:48:22.651Z"
   },
   "62": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-17",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-08-28T06:14:01.566Z"
+    "fetchedAt": "2026-08-29T03:48:26.424Z"
   },
   "106": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-10",
     "source": "www.mcm.edu.cn",
     "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-08-28T06:14:06.248Z"
+    "fetchedAt": "2026-08-29T03:48:30.975Z"
   },
   "181": {
     "regStart": null,
@@ -53,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-28T06:14:24.040Z"
+    "fetchedAt": "2026-08-29T03:48:37.852Z"
   },
   "182": {
     "regStart": null,
@@ -62,10 +62,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-28T06:14:24.767Z"
+    "fetchedAt": "2026-08-29T03:48:38.617Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-28T06:14:31.043Z",
+    "fetchedAt": "2026-08-29T03:48:42.174Z",
     "crawled": 31,
     "live": 7,
     "keptPrevious": 0,
