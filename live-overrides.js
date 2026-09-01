@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-24",
     "source": "www.clpp.org.cn",
     "official": "https://www.clpp.org.cn",
-    "fetchedAt": "2026-08-31T00:46:11.135Z"
+    "fetchedAt": "2026-09-01T01:21:28.881Z"
   },
   "35": {
     "regStart": "2026-08-24",
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-01-11",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-08-31T00:46:14.140Z"
+    "fetchedAt": "2026-09-01T01:21:29.842Z"
   },
   "58": {
     "regStart": null,
@@ -26,16 +26,16 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-08-24",
     "source": "www.nuedc-training.com.cn",
     "official": "https://www.nuedc-training.com.cn",
-    "fetchedAt": "2026-08-31T00:46:15.942Z"
+    "fetchedAt": "2026-09-01T01:21:31.707Z"
   },
-  "62": {
+  "106": {
     "regStart": null,
     "regEnd": null,
-    "eventStart": "2026-08-06",
-    "eventEnd": "2026-08-17",
-    "source": "www.jienengjianpai.org",
-    "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-08-31T00:46:19.147Z"
+    "eventStart": "2026-09-10",
+    "eventEnd": "2026-09-10",
+    "source": "www.mcm.edu.cn",
+    "official": "https://www.mcm.edu.cn",
+    "fetchedAt": "2026-09-01T01:21:39.467Z"
   },
   "181": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-31T00:46:31.917Z"
+    "fetchedAt": "2026-09-01T01:21:46.818Z"
   },
   "182": {
     "regStart": null,
@@ -53,10 +53,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-08-31T00:46:32.351Z"
+    "fetchedAt": "2026-09-01T01:21:47.383Z"
   },
   "_meta": {
-    "fetchedAt": "2026-08-31T00:46:36.802Z",
+    "fetchedAt": "2026-09-01T01:21:51.974Z",
     "crawled": 31,
     "live": 6,
     "keptPrevious": 0,
