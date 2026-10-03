@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-28",
     "source": "www.clpp.org.cn",
     "official": "https://www.clpp.org.cn",
-    "fetchedAt": "2026-10-02T01:45:47.114Z"
+    "fetchedAt": "2026-10-03T01:18:24.452Z"
   },
   "35": {
     "regStart": "2026-08-24",
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-01-11",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-10-02T01:45:48.837Z"
+    "fetchedAt": "2026-10-03T01:18:26.115Z"
   },
   "60": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-10-02T01:45:57.919Z"
+    "fetchedAt": "2026-10-03T01:18:37.414Z"
   },
   "62": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-24",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-10-02T01:45:52.617Z"
+    "fetchedAt": "2026-10-03T01:18:31.627Z"
   },
   "90": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-21",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-10-02T01:45:53.016Z"
+    "fetchedAt": "2026-10-03T01:18:33.875Z"
   },
   "171": {
     "regStart": null,
@@ -53,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-21",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-10-02T01:46:05.057Z"
+    "fetchedAt": "2026-10-03T01:18:53.394Z"
   },
   "181": {
     "regStart": null,
@@ -62,7 +62,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-02T01:46:04.715Z"
+    "fetchedAt": "2026-10-03T01:18:55.125Z"
   },
   "182": {
     "regStart": null,
@@ -71,10 +71,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-02T01:46:05.492Z"
+    "fetchedAt": "2026-10-03T01:18:55.943Z"
   },
   "_meta": {
-    "fetchedAt": "2026-10-02T01:46:10.022Z",
+    "fetchedAt": "2026-10-03T01:19:02.763Z",
     "crawled": 31,
     "live": 8,
     "keptPrevious": 0,
