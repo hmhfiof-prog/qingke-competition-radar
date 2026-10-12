@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-28",
     "source": "www.clpp.org.cn",
     "official": "https://www.clpp.org.cn",
-    "fetchedAt": "2026-10-11T01:09:13.791Z"
+    "fetchedAt": "2026-10-12T01:33:47.566Z"
   },
   "35": {
     "regStart": "2026-08-24",
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-01-11",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-10-11T01:09:17.367Z"
+    "fetchedAt": "2026-10-12T01:33:50.795Z"
   },
   "60": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-10-11T01:09:24.956Z"
+    "fetchedAt": "2026-10-12T01:33:54.433Z"
   },
   "90": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-21",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-10-11T01:09:21.850Z"
+    "fetchedAt": "2026-10-12T01:33:55.192Z"
   },
   "171": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-21",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-10-11T01:09:42.756Z"
+    "fetchedAt": "2026-10-12T01:34:10.853Z"
   },
   "181": {
     "regStart": null,
@@ -53,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-11T01:09:44.490Z"
+    "fetchedAt": "2026-10-12T01:34:12.805Z"
   },
   "182": {
     "regStart": null,
@@ -62,10 +62,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-11T01:09:44.554Z"
+    "fetchedAt": "2026-10-12T01:34:13.673Z"
   },
   "_meta": {
-    "fetchedAt": "2026-10-11T01:09:44.673Z",
+    "fetchedAt": "2026-10-12T01:34:17.650Z",
     "crawled": 31,
     "live": 7,
     "keptPrevious": 0,
