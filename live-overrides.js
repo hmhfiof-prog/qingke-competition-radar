@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-10-28T01:33:12.411Z"
+    "fetchedAt": "2026-10-29T01:54:21.915Z"
   },
   "62": {
     "regStart": null,
@@ -17,25 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-24",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-10-28T01:33:13.922Z"
-  },
-  "90": {
-    "regStart": null,
-    "regEnd": null,
-    "eventStart": "2026-09-15",
-    "eventEnd": "2026-09-21",
-    "source": "www.sun-ada.net",
-    "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-10-28T01:33:15.226Z"
-  },
-  "171": {
-    "regStart": null,
-    "regEnd": null,
-    "eventStart": "2026-09-15",
-    "eventEnd": "2026-09-21",
-    "source": "www.sun-ada.net",
-    "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-10-28T01:33:33.099Z"
+    "fetchedAt": "2026-10-29T01:54:18.729Z"
   },
   "178": {
     "regStart": null,
@@ -44,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-10-20",
     "source": "cy.ncss.cn",
     "official": "https://cy.ncss.cn",
-    "fetchedAt": "2026-10-28T01:33:42.289Z"
+    "fetchedAt": "2026-10-29T01:54:39.555Z"
   },
   "181": {
     "regStart": null,
@@ -53,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-28T01:33:34.649Z"
+    "fetchedAt": "2026-10-29T01:54:33.274Z"
   },
   "182": {
     "regStart": null,
@@ -62,12 +44,12 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-28T01:33:35.478Z"
+    "fetchedAt": "2026-10-29T01:54:33.620Z"
   },
   "_meta": {
-    "fetchedAt": "2026-10-28T01:33:42.546Z",
+    "fetchedAt": "2026-10-29T01:54:39.674Z",
     "crawled": 31,
-    "live": 7,
+    "live": 5,
     "keptPrevious": 0,
     "note": "由 GitHub Actions 定时抓取各竞赛官网自动生成；标注「官网实时」的赛事时间为自动抓取结果，请以官网公告为准。"
   }
