@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-10-30T02:05:27.244Z"
+    "fetchedAt": "2026-10-31T01:44:14.437Z"
   },
   "62": {
     "regStart": null,
@@ -17,7 +17,16 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-24",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-10-30T02:05:22.931Z"
+    "fetchedAt": "2026-10-31T01:44:09.942Z"
+  },
+  "106": {
+    "regStart": null,
+    "regEnd": null,
+    "eventStart": "2026-09-10",
+    "eventEnd": "2026-09-10",
+    "source": "www.mcm.edu.cn",
+    "official": "https://www.mcm.edu.cn",
+    "fetchedAt": "2026-10-31T01:44:14.022Z"
   },
   "178": {
     "regStart": null,
@@ -26,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-10-20",
     "source": "cy.ncss.cn",
     "official": "https://cy.ncss.cn",
-    "fetchedAt": "2026-10-30T02:05:43.171Z"
+    "fetchedAt": "2026-10-31T01:44:36.347Z"
   },
   "181": {
     "regStart": null,
@@ -35,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-30T02:05:38.656Z"
+    "fetchedAt": "2026-10-31T01:44:33.509Z"
   },
   "182": {
     "regStart": null,
@@ -44,12 +53,12 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-10-30T02:05:39.355Z"
+    "fetchedAt": "2026-10-31T01:44:34.370Z"
   },
   "_meta": {
-    "fetchedAt": "2026-10-30T02:05:43.292Z",
+    "fetchedAt": "2026-10-31T01:44:40.246Z",
     "crawled": 31,
-    "live": 5,
+    "live": 6,
     "keptPrevious": 0,
     "note": "由 GitHub Actions 定时抓取各竞赛官网自动生成；标注「官网实时」的赛事时间为自动抓取结果，请以官网公告为准。"
   }
