@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-01-11",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-11-04T02:33:40.980Z"
+    "fetchedAt": "2026-11-05T02:40:18.949Z"
   },
   "60": {
     "regStart": null,
@@ -17,16 +17,25 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-11-04T02:33:48.235Z"
+    "fetchedAt": "2026-11-05T02:40:25.137Z"
   },
-  "62": {
+  "90": {
     "regStart": null,
     "regEnd": null,
-    "eventStart": "2026-09-24",
-    "eventEnd": "2026-09-24",
-    "source": "www.jienengjianpai.org",
-    "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-11-04T02:33:46.067Z"
+    "eventStart": "2026-10-28",
+    "eventEnd": "2026-10-28",
+    "source": "www.sun-ada.net",
+    "official": "https://www.sun-ada.net",
+    "fetchedAt": "2026-11-05T02:40:27.266Z"
+  },
+  "171": {
+    "regStart": null,
+    "regEnd": null,
+    "eventStart": "2026-10-28",
+    "eventEnd": "2026-10-28",
+    "source": "www.sun-ada.net",
+    "official": "https://www.sun-ada.net",
+    "fetchedAt": "2026-11-05T02:40:41.605Z"
   },
   "178": {
     "regStart": null,
@@ -35,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-10-20",
     "source": "cy.ncss.cn",
     "official": "https://cy.ncss.cn",
-    "fetchedAt": "2026-11-04T02:34:06.858Z"
+    "fetchedAt": "2026-11-05T02:40:47.127Z"
   },
   "181": {
     "regStart": null,
@@ -44,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-11-04T02:34:01.830Z"
+    "fetchedAt": "2026-11-05T02:40:41.704Z"
   },
   "182": {
     "regStart": null,
@@ -53,12 +62,12 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-05-23",
     "source": "www.tiaozhanbei.net",
     "official": "https://www.tiaozhanbei.net",
-    "fetchedAt": "2026-11-04T02:34:02.633Z"
+    "fetchedAt": "2026-11-05T02:40:42.453Z"
   },
   "_meta": {
-    "fetchedAt": "2026-11-04T02:34:06.978Z",
+    "fetchedAt": "2026-11-05T02:40:47.248Z",
     "crawled": 31,
-    "live": 6,
+    "live": 7,
     "keptPrevious": 0,
     "note": "由 GitHub Actions 定时抓取各竞赛官网自动生成；标注「官网实时」的赛事时间为自动抓取结果，请以官网公告为准。"
   }
