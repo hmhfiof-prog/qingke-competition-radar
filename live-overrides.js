@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-12",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-11-13T02:48:31.472Z"
+    "fetchedAt": "2026-11-14T02:36:32.654Z"
   },
   "60": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-11-13T02:48:37.540Z"
+    "fetchedAt": "2026-11-14T02:36:40.127Z"
   },
   "62": {
     "regStart": null,
@@ -26,16 +26,16 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-24",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-11-13T02:48:37.235Z"
+    "fetchedAt": "2026-11-14T02:36:37.848Z"
   },
   "90": {
     "regStart": null,
     "regEnd": null,
-    "eventStart": "2026-10-28",
-    "eventEnd": "2026-11-12",
+    "eventStart": "2026-11-12",
+    "eventEnd": "2026-11-13",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-13T02:48:40.039Z"
+    "fetchedAt": "2026-11-14T02:36:38.581Z"
   },
   "106": {
     "regStart": null,
@@ -44,16 +44,16 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-10",
     "source": "www.mcm.edu.cn",
     "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-11-13T02:48:41.336Z"
+    "fetchedAt": "2026-11-14T02:36:41.057Z"
   },
   "171": {
     "regStart": null,
     "regEnd": null,
-    "eventStart": "2026-10-28",
-    "eventEnd": "2026-11-12",
+    "eventStart": "2026-11-12",
+    "eventEnd": "2026-11-13",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-13T02:48:55.024Z"
+    "fetchedAt": "2026-11-14T02:36:59.146Z"
   },
   "178": {
     "regStart": null,
@@ -62,10 +62,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-10-20",
     "source": "cy.ncss.cn",
     "official": "https://cy.ncss.cn",
-    "fetchedAt": "2026-11-13T02:48:55.764Z"
+    "fetchedAt": "2026-11-14T02:37:02.705Z"
   },
   "_meta": {
-    "fetchedAt": "2026-11-13T02:48:55.884Z",
+    "fetchedAt": "2026-11-14T02:37:06.947Z",
     "crawled": 31,
     "live": 7,
     "keptPrevious": 0,
