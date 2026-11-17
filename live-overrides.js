@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-12",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-11-16T02:19:53.798Z"
+    "fetchedAt": "2026-11-17T04:41:56.997Z"
   },
   "60": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-11-16T02:20:00.710Z"
+    "fetchedAt": "2026-11-17T04:42:03.971Z"
   },
   "62": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-24",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-11-16T02:19:59.864Z"
+    "fetchedAt": "2026-11-17T04:42:02.623Z"
   },
   "90": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-16T02:20:02.905Z"
+    "fetchedAt": "2026-11-17T04:42:04.068Z"
   },
   "171": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-15",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-16T02:20:18.408Z"
+    "fetchedAt": "2026-11-17T04:42:26.393Z"
   },
   "178": {
     "regStart": null,
@@ -53,10 +53,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-10-20",
     "source": "cy.ncss.cn",
     "official": "https://cy.ncss.cn",
-    "fetchedAt": "2026-11-16T02:20:25.474Z"
+    "fetchedAt": "2026-11-17T04:42:31.765Z"
   },
   "_meta": {
-    "fetchedAt": "2026-11-16T02:20:25.594Z",
+    "fetchedAt": "2026-11-17T04:42:31.885Z",
     "crawled": 31,
     "live": 6,
     "keptPrevious": 0,
