@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-20",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-11-23T02:58:07.026Z"
+    "fetchedAt": "2026-11-24T06:16:24.087Z"
   },
   "60": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-11-23T02:58:13.641Z"
+    "fetchedAt": "2026-11-24T06:16:30.672Z"
   },
   "62": {
     "regStart": null,
@@ -26,7 +26,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-24",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-11-23T02:58:13.190Z"
+    "fetchedAt": "2026-11-24T06:16:30.973Z"
   },
   "90": {
     "regStart": null,
@@ -35,7 +35,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-21",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-23T02:58:13.610Z"
+    "fetchedAt": "2026-11-24T06:16:33.695Z"
   },
   "106": {
     "regStart": null,
@@ -44,7 +44,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-10",
     "source": "www.mcm.edu.cn",
     "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-11-23T02:58:15.624Z"
+    "fetchedAt": "2026-11-24T06:16:33.174Z"
   },
   "171": {
     "regStart": null,
@@ -53,7 +53,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-21",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-23T02:58:24.372Z"
+    "fetchedAt": "2026-11-24T06:16:50.276Z"
   },
   "178": {
     "regStart": null,
@@ -62,10 +62,10 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-10-20",
     "source": "cy.ncss.cn",
     "official": "https://cy.ncss.cn",
-    "fetchedAt": "2026-11-23T02:58:27.313Z"
+    "fetchedAt": "2026-11-24T06:16:57.606Z"
   },
   "_meta": {
-    "fetchedAt": "2026-11-23T02:58:27.433Z",
+    "fetchedAt": "2026-11-24T06:17:00.476Z",
     "crawled": 31,
     "live": 7,
     "keptPrevious": 0,
