@@ -8,7 +8,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-11-20",
     "source": "www.fwwb.org.cn",
     "official": "http://www.fwwb.org.cn",
-    "fetchedAt": "2026-11-24T06:16:24.087Z"
+    "fetchedAt": "2026-11-25T04:58:49.857Z"
   },
   "60": {
     "regStart": null,
@@ -17,7 +17,7 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-06-03",
     "source": "www.robomaster.com",
     "official": "https://www.robomaster.com",
-    "fetchedAt": "2026-11-24T06:16:30.672Z"
+    "fetchedAt": "2026-11-25T04:58:55.441Z"
   },
   "62": {
     "regStart": null,
@@ -26,34 +26,25 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-09-24",
     "source": "www.jienengjianpai.org",
     "official": "http://www.jienengjianpai.org",
-    "fetchedAt": "2026-11-24T06:16:30.973Z"
+    "fetchedAt": "2026-11-25T04:58:55.670Z"
   },
   "90": {
     "regStart": null,
     "regEnd": null,
     "eventStart": "2026-11-12",
-    "eventEnd": "2026-11-21",
+    "eventEnd": "2026-11-24",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-24T06:16:33.695Z"
-  },
-  "106": {
-    "regStart": null,
-    "regEnd": null,
-    "eventStart": "2026-09-10",
-    "eventEnd": "2026-09-10",
-    "source": "www.mcm.edu.cn",
-    "official": "https://www.mcm.edu.cn",
-    "fetchedAt": "2026-11-24T06:16:33.174Z"
+    "fetchedAt": "2026-11-25T04:59:01.562Z"
   },
   "171": {
     "regStart": null,
     "regEnd": null,
     "eventStart": "2026-11-12",
-    "eventEnd": "2026-11-21",
+    "eventEnd": "2026-11-24",
     "source": "www.sun-ada.net",
     "official": "https://www.sun-ada.net",
-    "fetchedAt": "2026-11-24T06:16:50.276Z"
+    "fetchedAt": "2026-11-25T04:59:20.615Z"
   },
   "178": {
     "regStart": null,
@@ -62,12 +53,12 @@ window.LIVE_OVERRIDES = {
     "eventEnd": "2026-10-20",
     "source": "cy.ncss.cn",
     "official": "https://cy.ncss.cn",
-    "fetchedAt": "2026-11-24T06:16:57.606Z"
+    "fetchedAt": "2026-11-25T04:59:28.056Z"
   },
   "_meta": {
-    "fetchedAt": "2026-11-24T06:17:00.476Z",
+    "fetchedAt": "2026-11-25T04:59:28.176Z",
     "crawled": 31,
-    "live": 7,
+    "live": 6,
     "keptPrevious": 0,
     "note": "由 GitHub Actions 定时抓取各竞赛官网自动生成；标注「官网实时」的赛事时间为自动抓取结果，请以官网公告为准。"
   }
